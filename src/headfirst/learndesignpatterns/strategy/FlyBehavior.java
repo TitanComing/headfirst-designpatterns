@@ -1,4 +1,4 @@
-package headfirst.designpatterns.strategypeng;
+package headfirst.learndesignpatterns.strategy;
 
 public interface FlyBehavior {
     void fly();

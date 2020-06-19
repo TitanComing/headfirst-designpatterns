@@ -1,4 +1,4 @@
-package headfirst.designpatterns.strategypeng;
+package headfirst.learndesignpatterns.strategy;
 
 /**
  * Created by peng on 2020/6/18.
