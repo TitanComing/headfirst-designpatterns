@@ -1,12 +1,12 @@
-package headfirst.learndesignpatterns.singleton.classic;
+package headfirst.learndesignpatterns.singleton.dcl;
 
 /**
  * Created by peng on 2020/6/22.
  */
 public class Singleton {
-    private volatile static Singleton uniqueInstance;
+    protected volatile static Singleton uniqueInstance;
 
-    private Singleton(){}
+    protected Singleton(){}
 
     public static Singleton getInstance(){
         if(uniqueInstance == null){
@@ -21,7 +21,7 @@ public class Singleton {
 
     // other useful methods here
     public String getDescription() {
-        return "I'm a classic Singleton!";
+        return "I'm a dcl Singleton!";
     }
 
 }

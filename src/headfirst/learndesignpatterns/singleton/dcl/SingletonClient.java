@@ -1,4 +1,4 @@
-package headfirst.learndesignpatterns.singleton.classic;
+package headfirst.learndesignpatterns.singleton.dcl;
 
 /**
  * Created by peng on 2020/6/22.

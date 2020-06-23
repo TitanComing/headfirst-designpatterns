@@ -4,14 +4,50 @@ package headfirst.learndesignpatterns.singleton.subclass;
  * Created by peng on 2020/6/22.
  */
 public class Singleton {
-    protected static Singleton uniqueInstance;
+    private String color;
+    private int num;
+    private boolean ordered;
 
-    protected Singleton(){};
+    protected Singleton() {}
 
-    public static synchronized Singleton getInstance(){
+    protected volatile static Singleton uniqueInstance;
+    public static Singleton getInstance(){
         if(uniqueInstance == null){
-            uniqueInstance = new Singleton();
+            synchronized(Singleton.class){
+                if(uniqueInstance == null){
+                    uniqueInstance = new Singleton();
+                }
+            }
         }
         return uniqueInstance;
+    }
+
+    // other useful methods here
+    public String getDescription() {
+        return "I'm a dcl Singleton!";
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public boolean isOrdered() {
+        return ordered;
+    }
+
+    public void setOrdered(boolean ordered) {
+        this.ordered = ordered;
     }
 }
