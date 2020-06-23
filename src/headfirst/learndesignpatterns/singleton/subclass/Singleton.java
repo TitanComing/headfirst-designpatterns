@@ -8,9 +8,10 @@ public class Singleton {
     private int num;
     private boolean ordered;
 
+    private volatile static Singleton uniqueInstance;
+
     protected Singleton() {}
 
-    protected volatile static Singleton uniqueInstance;
     public static Singleton getInstance(){
         if(uniqueInstance == null){
             synchronized(Singleton.class){
