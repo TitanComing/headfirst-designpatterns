@@ -1,4 +1,5 @@
-package headfirst.designpatterns.adapter.ducks;
+package headfirst.learndesignpatterns.adapter;
+
 
 public class TurkeyTestDrive {
 	public static void main(String[] args) {
