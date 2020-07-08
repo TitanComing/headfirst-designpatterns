@@ -1,4 +1,4 @@
-package headfirst.designpatterns.ducks;
+package headfirst.learndesignpatterns.ducks;
 
 public class MallardDuck implements Duck {
 	public void quack() {

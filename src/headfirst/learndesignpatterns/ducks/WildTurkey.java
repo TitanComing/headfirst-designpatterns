@@ -1,4 +1,4 @@
-package headfirst.designpatterns.ducks;
+package headfirst.learndesignpatterns.ducks;
 
 public class WildTurkey implements Turkey {
 	public void gobble() {

@@ -1,4 +1,4 @@
-package headfirst.designpatterns.ducks;
+package headfirst.learndesignpatterns.ducks;
 
 public class TurkeyAdapter implements Duck {
 	Turkey turkey;
